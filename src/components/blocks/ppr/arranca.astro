@@ -1,0 +1,40 @@
+---
+// - Layout
+import Section from '../../ui/Section.astro'
+import { Icon } from 'astro-icon/components'
+---
+
+<div class="py-4">
+<h2 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100 mt-2">
+    Arranca con tu plan desde $2,500 al mes
+</h2>
+<p class="text-base text-neutral-600 dark:text-neutral-400">
+    Tus Aportaciones pueden convertirse en una suma importante para tu retiro.
+</p>
+<ul class="mt-4 space-y-6">
+    <li class="flex items-center gap-4">
+        <div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-blue-100 dark:bg-blue-900/30">
+            <Icon name="microphone" class="size-6 text-blue-600 dark:text-blue-400" />
+        </div>
+        <span class="text-base font-medium text-neutral-800 dark:text-neutral-200">
+            <strong>Seguridad</strong>: Tu dinero está protegido dentro de Fideicomisos.
+        </span>
+    </li>
+    <li class="flex items-center gap-4">
+        <div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-blue-100 dark:bg-blue-900/30">
+            <Icon name="cursor-arrow-ripple" class="size-6 text-blue-600 dark:text-blue-400" />
+        </div>
+        <span class="text-base font-medium text-neutral-800 dark:text-neutral-200">
+            <strong>Rendimientos</strong>: Genera rendimientos atractivos y constantes mediante la reinversión de intereses. 
+        </span>
+    </li>
+    <li class="flex items-center gap-4">
+        <div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-blue-100 dark:bg-blue-900/30">
+            <Icon name="user-group" class="size-6 text-blue-600 dark:text-blue-400" />
+        </div>
+        <span class="text-base font-medium text-neutral-800 dark:text-neutral-200">
+            <strong>Beneficios Fiscales</strong>: Deduce tus aportaciones de tu declaración anual y reduce tu pago de impuestos.
+        </span>
+    </li>
+</ul>
+</div>

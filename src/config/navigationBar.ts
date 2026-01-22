@@ -34,24 +34,26 @@ export interface NavData {
 export const navigationBarData: NavData = {
 	logo: {
 		src: '/logo.svg',
-		alt: 'The tailwind astro theme',
-		text: 'Foxi.'
+		alt: 'Empresa Aqui',
+		text: 'LogiSeguros'
 	},
 	navItems: [
 		{ name: 'Home', link: '/' },
-		{ name: 'Pricing', link: '/pricing' },
-		{ name: 'Features', link: '/features' },
 		{
-			name: 'Resources',
+			name: 'Productos',
 			link: '#',
 			submenu: [
-				{ name: 'Blog', link: '/blog' },
-				{ name: 'Changelog', link: '/changelog' },
-				{ name: 'FAQ', link: '/faq' },
-				{ name: 'Terms', link: '/terms' }
+				{ name: 'Plan de Retiro', link: '/blog' },
+				{ name: 'Fondo de Ahorro', link: '/changelog' },
+				{ name: 'Fideicomiso Educativo', link: '/faq' },
+				{ name: 'Blindaje Empresarial', link: '/terms' },
+				{ name: 'Fondo de Ahorro para Mujeres', link: '/terms' },
+				{ name: 'Consultoría Financiera', link: '/terms' },
 			]
 		},
-		{ name: 'Contact', link: '/contact' }
+		{ name: 'Nosotros', link: '/pricing' },
+		{ name: 'FAQ', link: '/features' },
+		{ name: 'Contacto', link: '/contact' }
 	],
-	navActions: [{ name: 'Try it now', link: '/', style: 'primary', size: 'lg' }]
+	navActions: [{ name: 'Calculadora', link: '/', style: 'primary', size: 'lg' }]
 }

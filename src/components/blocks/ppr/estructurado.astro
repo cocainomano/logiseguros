@@ -1,0 +1,27 @@
+---
+import { Icon } from 'astro-icon/components'
+import { Whatsapp } from 'iconsax-astro';
+import Button from '../../ui/Button.astro'
+---
+
+<h2 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100" style="margin-top: 25px;">
+    ¿Cómo se siente un Plan Personal de Retiro bien estructurado?
+</h2>
+<p class="text-base text-neutral-600 dark:text-neutral-400">
+    Y cuando está hecho a tu medida, se convierte en una forma inteligente de vivir como quieres, desde hoy.
+    <br><br>
+    Así se siente un Plan Personal de Retiro bien estructurado:
+    <ul class="list-disc ml-6 space-y-2 text-base text-neutral-600 dark:text-neutral-400">
+        <li><strong>Flexible</strong>, porque se adapta a cómo vives y a cómo cambian tus planes.</li>
+        <li><strong>A tu ritmo</strong>, sin exigirte sacrificios innecesarios.</li>
+        <li><strong>Personal</strong>, pensado para ti y para tu estilo de vida.</li>
+        <li><strong>Libre</strong>, porque te da opciones y control, no restricciones.</li>
+    </ul>
+    <div class="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+        <Button link="#" style="primary" classes="w-full sm:w-auto !bg-green-600 !hover:bg-green-700 border-none">
+            <Whatsapp size={24} color="#ffffff" type="Bold" />
+            Contacto por WhatsApp
+        </Button>
+    </div>
+    <br>
+</p>

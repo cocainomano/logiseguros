@@ -10,6 +10,7 @@ export interface Logo {
 export interface FooterAbout {
 	title: string
 	aboutText: string
+	address: string
 	logo: Logo
 }
 
@@ -35,77 +36,78 @@ export interface FooterData {
 
 export const footerNavigationData: FooterData = {
 	footerAbout: {
-		title: 'Foxi.',
+		title: 'LogiSeguros',
 		aboutText:
-			'Expertly made, responsive, accessible components in React and HTML ready to be used on your website or app. Just copy and paste them on your Tailwind CSS project.',
+			'En LogiSeguros, tenemos los mejores productos para tu retiro, educación de tus hijos, ahorro y salud. Te ayudamos a elegir lo que mejor se adapta a tu vida y a tu situación actual de forma que no sacrifiques tu estilo de vida actual.',
 		logo: {
 			src: '/logo.svg',
 			alt: 'The tailwind astro theme',
-			text: 'Foxi.'
-		}
+			text: 'LogiSeguros'
+		},
+		address: 'Calle 123, Col. Centro, C.P. 12345, Ciudad de México, México',
 	},
 	footerColumns: [
 		{
-			category: 'Product',
+			category: 'Producto',
 			subCategories: [
 				{
-					subCategory: 'Features',
-					subCategoryLink: '/features'
+					subCategory: 'Plan de Retiro',
+					subCategoryLink: '/plan-personal-de-retiro'
 				},
 				{
-					subCategory: 'FAQ',
-					subCategoryLink: '/faq'
+					subCategory: 'Fondo de Ahorro',
+					subCategoryLink: '/fondo-de-ahorro'
 				},
 				{
-					subCategory: 'Pricing',
-					subCategoryLink: '/pricing'
+					subCategory: 'Fideicomiso Educativo',
+					subCategoryLink: '/fideicomiso-educativo'
 				},
 				{
-					subCategory: 'Changelog',
-					subCategoryLink: '/changelog'
+					subCategory: 'Blindaje Empresarial',
+					subCategoryLink: '/blindaje-empresarial'
 				},
 				{
-					subCategory: 'Terms',
-					subCategoryLink: '/terms'
+					subCategory: 'Fondo de Ahorro para Mujeres',
+					subCategoryLink: '/fondo-de-ahorro-para-mujeres'
+				},
+				{
+					subCategory: 'Consultoría Financiera',
+					subCategoryLink: '/consultoría-financiera'
 				}
 			]
 		},
 		{
-			category: 'About us',
+			category: 'Nosotros',
 			subCategories: [
 				{
-					subCategory: 'About us',
+					subCategory: 'Nosotros',
 					subCategoryLink: '/'
 				},
 				{
-					subCategory: 'News',
-					subCategoryLink: '/blog'
+					subCategory: 'Aviso de Privacidad',
+					subCategoryLink: '/aviso-de-privacidad'
 				},
 				{
-					subCategory: 'Careers',
-					subCategoryLink: '/blog'
+					subCategory: 'Términos y Condiciones',
+					subCategoryLink: '/terminos-y-condiciones'
 				}
 			]
 		},
 		{
-			category: 'Get in touch',
+			category: 'Contáctanos',
 			subCategories: [
 				{
-					subCategory: 'Contact',
+					subCategory: 'Contacto',
 					subCategoryLink: '/contact'
 				},
 				{
-					subCategory: 'Support',
-					subCategoryLink: '/contact'
+					subCategory: 'Agenda tu Cita',
+					subCategoryLink: '/agenda-tu-cita'
 				},
-				{
-					subCategory: 'Join us',
-					subCategoryLink: '/contact'
-				}
 			]
 		}
 	],
 	subFooter: {
-		copywriteText: '© Foxi 2024.'
+		copywriteText: '© LogiSeguros 2025-2026.'
 	}
 }

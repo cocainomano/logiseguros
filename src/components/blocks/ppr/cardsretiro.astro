@@ -1,0 +1,76 @@
+---
+// Seccion de tarjetas de retiro
+// ------------
+// Description: A grid 
+// Components
+// - Layout
+import Section from '../../ui/Section.astro'
+import Row from '../../ui/Row.astro'
+import Col from '../../ui/Col.astro'
+// - UI
+import Card from '../../ui/cards/FeatureCard.astro'
+import Button from '../../ui/Button.astro'
+import { Icon } from 'astro-icon/components'
+// Content
+// - Cards
+import imgProfesionista  from '../../../assets/ppr/sampleprof.jpg'
+
+---
+<div class="py-4">
+    <div class="max-w-5xl mx-auto">
+        <h2 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100" style="margin-top: 25px; padding-bottom: 15px;">
+            Un Plan de Retiro que no sacrifica tu estilo de vida
+        </h2>
+        <strong>2 de cada 3 mexicanos</strong> está de acuerdo en que es mejor gastar dinero en disfrutar de la vida ahora que ahorrar para el retiro y por ello no contratan un PPR.<br><br>
+        
+        Pero ¿si te dijéramos que no necesitas sacrificar tu estilo de vida para tener un PPR que te permita asegurar tu futuro?
+        <br><br>
+        Compruébalo con nosotros,<strong>tenemos experiencia asesorando a empleados, emprendedores y dueños de negocios y PyMES</strong> para obtener un Plan de Ahorro de acuerdo a su estilo de vida.
+    </div>
+</div>
+
+<Section id="features">
+   
+    <Row>
+        <Col span="4" classes="flex flex-col gap-6">
+			<Card
+				title="Plan de Retiro Para Profesionistas"
+				subtitle="Estabilidad + beneficios fiscales óptimos y sin grandes sacrificios."
+                image={imgProfesionista}
+			/>
+             <Button link="/agenda-tu-cita" style="primary" classes="w-full sm:w-auto h-auto py-3">
+              <Icon name="clipboard-document-list" class="size-8" />
+              <span class="text-center">
+               Agenda una sesión sin compromiso <br> para tu plan como Profesionista
+              </span>
+            </Button>
+		</Col>
+        <Col span="4" classes="flex flex-col gap-6">
+			<Card
+				title="Plan de Retiro Para Emprendedores"
+				subtitle="Flexibilidad y protección ante ingresos variables y asesoría personalizada para el mejor plan de retiro personal."
+                image={imgProfesionista}
+			/>
+            <Button link="/agenda-tu-cita" style="primary" classes="w-full sm:w-auto h-auto py-3">
+              <Icon name="clipboard-document-list" class="size-8" />
+              <span class="text-center">
+               Sesión Exclusiva Emprendedores<br> agenda sin compromiso
+              </span>
+            </Button>
+        </Col>
+        <Col span="4" classes="flex flex-col gap-6">
+			<Card
+				title="Plan de Retiro Para Dueños de Negocios"
+				subtitle="Protección y máximo provecho fiscal y legal, te asesoramos a construir tu futuro sin sacrificios"
+                image={imgProfesionista}
+			/>
+            <Button link="/agenda-tu-cita" style="primary" classes="w-full sm:w-auto h-auto py-3">
+              <Icon name="clipboard-document-list" class="size-8" />
+              <span class="text-center">
+               Sesión Negocios y PyMEs<br> para ti que eres dueño de negocio
+              </span>
+            </Button>
+        </Col>
+    </Row>
+    
+</Section>

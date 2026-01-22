@@ -1,29 +1,32 @@
 ---
 // Components
 // - Layout
-import Layout from '../layouts/Layout.astro'
+import Layout from      '../layouts/Layout.astro'
 // - UI
-import Hero from '../components/blocks/hero/HomeCTA.astro'
-import Features from '../components/blocks/features/FeatureCards.astro'
-import Testimonial from '../components/blocks/testimonials/BasicDark.astro'
-import HighlightBlocks from '../components/blocks/highlights/HightlightRows.astro'
-import CTA from '../components/blocks/CTA/BasicDark.astro'
+import Hero from        '../components/blocks/hero/HomeCTA.astro'
+import SocialProof from '../components/blocks/socialproof/Basic.astro'
+import Features from    '../components/blocks/features/FeatureCards.astro'
+import CTA from         '../components/blocks/CTA/BasicDark.astro'
+//import Testimonial from '../components/blocks/testimonials/BasicDark.astro'
+//import HighlightBlocks from '../components/blocks/highlights/HightlightRows.astro'
+
 
 // Content
 // - Testimonial background
-import testimonialBackground from '../assets/testimonial-bg-01.webp'
+// import testimonialBackground from '../assets/testimonial-bg-01.webp'
 // - SEO
 const SEO = {
-	title: 'Foxi | Your Productivity Toolkit',
+	title: 'LogiSeguros | Tu asesor en seguros y ahorro',
 	description:
-		'Foxi is a powerful productivity toolkit designed to enhance your workflow and boost your productivity. With features like analytics, security, and integrations, Foxi is the perfect solution for your business.'
+		'En LogiSeguros, tenemos los mejores productos para tu retiro, educación de tus hijos, ahorro y salud. Te ayudamos a elegir lo que mejor se adapta a tu vida y a tu bolsillo, con marcas líderes y asesoría cercana.'
 }
 ---
 
 <Layout title={SEO.title} description={SEO.description}>
 	<Hero />
 	<Features />
-	<Testimonial bg={testimonialBackground} bgPosition="right" />
-	<HighlightBlocks />
+	<!--Testimonial bg={testimonialBackground} bgPosition="right" />
+	<HighlightBlocks /-->
 	<CTA />
+	<SocialProof />
 </Layout>

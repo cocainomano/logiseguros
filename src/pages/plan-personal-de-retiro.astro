@@ -1,0 +1,38 @@
+---
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - UI
+import Hero from       '../components/blocks/hero/PPRHero.astro'
+import CTA  from       '../components/blocks/CTA/BasicDark.astro'
+import Importante from '../components/blocks/ppr/importante.astro'
+import Arranca from    '../components/blocks/ppr/arranca.astro'
+import EstructuradoALV from '../components/blocks/ppr/estructurado.astro'
+import Cards from '../components/blocks/ppr/cardsretiro.astro'
+import FAQ from '../components/blocks/ppr/faqppr.astro'
+
+// - SEO
+const SEO = {
+	title: 'Plan Personal de Retiro | Foxi',
+	description: 'Descubre nuestros planes personales de retiro diseñados para asegurar tu futuro.'
+}
+// - Page Header
+const header = {
+	title: 'Plan Personal de <strong>Retiro</strong>',
+	text: 'Un Retiro sin Preocupaciones y un presente sin sacrificios'
+}
+---
+<Layout title={SEO.title} description={SEO.description}>
+	<Hero />
+	<section class="bg-white">
+		<div class="container mx-auto px-4" style="padding-top: 25px;">
+			<div class="max-w-5xl mx-auto">
+				<Importante />
+				<Arranca />
+				<EstructuradoALV />
+			</div>
+			<Cards />
+			<FAQ classes="bg-slate-50 dark:bg-neutral-900/40" />
+		</div>
+	</section>
+</Layout>

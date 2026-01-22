@@ -7,7 +7,7 @@ export interface Logo {
 	alt: string
 }
 
-export type Mode = 'auto' | 'light' | 'dark'
+export type Mode = 'light' | 'dark' | 'auto'
 
 export interface Config {
 	siteTitle: string
@@ -21,9 +21,9 @@ export interface Config {
 }
 
 export const configData: Config = {
-	siteTitle: 'Foxi. Tailwind CSS Astro Starter Kit by Oxygenna',
+	siteTitle: 'LogiSeguros',
 	siteDescription:
-		'Foxi is a design and development agency that specializes in creating beautiful and functional websites.',
+		'En LogiSeguros, tenemos los mejores productos para tu retiro, educación de tus hijos, ahorro y salud. Te ayudamos a elegir lo que mejor se adapta a tu vida y a tu presupuesto, con marcas líderes y asesoría cercana.',
 	ogImage: '/og.jpg',
 	logo: {
 		src: '/logo.svg',
@@ -31,6 +31,6 @@ export const configData: Config = {
 	},
 	canonical: true,
 	noindex: false,
-	mode: 'auto',
+	mode: 'light',
 	scrollAnimations: true
 }
