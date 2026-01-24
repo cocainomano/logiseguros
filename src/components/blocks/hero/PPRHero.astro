@@ -11,8 +11,9 @@ import Col     from '../../ui/Col.astro'
 import { Image }        from 'astro:assets'
 import Button           from '../../ui/Button.astro'
 // Content
-import heroImagePPR from '/src/assets/ppr/Hero-PPR.png'
-import heroImagenCel from '/src/assets/ppr/Hero-PPR-cel.png'
+import heroImage from '../../../assets/ppr/Hero-PPR.png'
+import heroImageCel from '../../../assets/ppr/Hero-PPR-cel.png'
+
 ---
 
 <Section id="intro" padding="top" classes="bg-neutral-50 dark:bg-neutral-900">
@@ -28,14 +29,14 @@ import heroImagenCel from '/src/assets/ppr/Hero-PPR-cel.png'
 			</p>
 			<a href="/agenda-tu-cita">
 				<Image
-					src={heroImagePPR}
+					src={heroImage}
 					alt="PPR Allianz Personal Retiro"
 					format="png"
 					quality={100}
 					class="hidden lg:block"
 				/>
 				<Image
-					src={heroImagenCel}
+					src={heroImageCel}
 					alt="PPR Allianz Personal Retiro"
 					format="png"
 					quality={100}
