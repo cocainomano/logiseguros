@@ -7,6 +7,13 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
   site: "https://logiseguros.iq-zone.com",
   output: "static",
+  vite: {
+    resolve: {
+      alias: {
+        "@": "/src",
+      },
+    },
+  },
   integrations: [
     tailwind(),
     icon(),
