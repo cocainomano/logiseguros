@@ -12,6 +12,9 @@ export interface FooterAbout {
 	aboutText: string
 	address: string
 	logo: Logo
+	conduseflogo: Logo
+	logoburo: Logo
+	logoesr: Logo
 }
 
 export interface SubCategory {
@@ -45,6 +48,21 @@ export const footerNavigationData: FooterData = {
 			text: 'LogiSeguros'
 		},
 		address: 'Calle 123, Col. Centro, C.P. 12345, Ciudad de México, México',
+		conduseflogo: {
+			src: '/src/assets/logos/condusefv2.png',
+			alt: 'Condusef',
+			text: ''
+		},
+		logoburo: {
+			src: '/src/assets/logos/logo-buro-v2.png',
+			alt: 'Buro',
+			text: ''
+		},
+		logoesr: {
+			src: '/src/assets/logos/logo-esr.png',
+			alt: 'ESR',
+			text: ''
+		},
 	},
 	footerColumns: [
 		{

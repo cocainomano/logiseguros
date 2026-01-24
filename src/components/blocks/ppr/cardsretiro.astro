@@ -13,28 +13,15 @@ import Button from '../../ui/Button.astro'
 import { Icon } from 'astro-icon/components'
 // Content
 // - Cards
-import imgProfesionista  from '../../../assets/ppr/logiprofesionistas.jpg'
-import imgEmprendedores  from '../../../assets/ppr/logiemprendedores.jpg'
-import imgDueñosNegocios  from '../../../assets/ppr/logiduenosnegocios.jpg'
+import imgProfesionista  from '../../../assets/ppr/logiempleado.jpg'
+import imgEmprendedores  from '../../../assets/ppr/logiemprendedor.jpg'
+import imgDueñosNegocios  from '../../../assets/ppr/logipyme.jpg'
 
 ---
-<div class="py-4">
-    <div class="max-w-5xl mx-auto">
-        <h2 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100" style="margin-top: 25px; padding-bottom: 15px;">
-            Un Plan de Retiro que no sacrifica tu estilo de vida
-        </h2>
-        <strong>2 de cada 3 mexicanos</strong> está de acuerdo en que es mejor gastar dinero en disfrutar de la vida ahora que ahorrar para el retiro y por ello no contratan un PPR.<br><br>
-        
-        Pero ¿si te dijéramos que no necesitas sacrificar tu estilo de vida para tener un PPR que te permita asegurar tu futuro?
-        <br><br>
-        Compruébalo con nosotros,<strong>tenemos experiencia asesorando a empleados, emprendedores y dueños de negocios y PyMES</strong> para obtener un Plan de Ahorro de acuerdo a su estilo de vida.
-    </div>
-</div>
-
-<Section id="features">
+<Section id="features" padding="none" classes="pt-4">
    
-    <Row>
-        <Col span="4" classes="flex flex-col gap-6">
+    <Row classes="gap-4">
+        <Col span="4" classes="flex flex-col gap-4">
 			<Card
 				title="Plan de Retiro Para Profesionistas"
 				subtitle="Estabilidad + beneficios fiscales óptimos y sin grandes sacrificios."
@@ -47,7 +34,7 @@ import imgDueñosNegocios  from '../../../assets/ppr/logiduenosnegocios.jpg'
               </span>
             </Button>
 		</Col>
-        <Col span="4" classes="flex flex-col gap-6">
+        <Col span="4" classes="flex flex-col gap-4">
 			<Card
 				title="Plan de Retiro Para Emprendedores"
 				subtitle="Flexibilidad y protección ante ingresos variables y asesoría personalizada para el mejor plan de retiro personal."
@@ -60,7 +47,7 @@ import imgDueñosNegocios  from '../../../assets/ppr/logiduenosnegocios.jpg'
               </span>
             </Button>
         </Col>
-        <Col span="4" classes="flex flex-col gap-6">
+        <Col span="4" classes="flex flex-col gap-4">
 			<Card
 				title="Plan de Retiro Para Dueños de Negocios"
 				subtitle="Protección y máximo provecho fiscal y legal, te asesoramos a construir tu futuro sin sacrificios"

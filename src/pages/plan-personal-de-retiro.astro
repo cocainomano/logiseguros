@@ -4,13 +4,13 @@
 import Layout from '../layouts/Layout.astro'
 // - UI
 import Hero from       '../components/blocks/hero/PPRHero.astro'
-import CTA  from       '../components/blocks/CTA/BasicDark.astro'
 import Importante from '../components/blocks/ppr/importante.astro'
 import Arranca from    '../components/blocks/ppr/arranca.astro'
 import EstructuradoALV from '../components/blocks/ppr/estructurado.astro'
 import Cards from '../components/blocks/ppr/cardsretiro.astro'
 import FAQ from '../components/blocks/ppr/faqppr.astro'
-
+import CardsInfoSAT from '../components/blocks/ppr/CardsInfoSAT.astro'
+import CTAppr from '../components/blocks/ppr/CTAppr.astro'
 // - SEO
 const SEO = {
 	title: 'Plan Personal de Retiro | Foxi',
@@ -31,8 +31,13 @@ const header = {
 				<Arranca />
 				<EstructuradoALV />
 			</div>
+			<CTAppr />
+			<CardsInfoSAT />
 			<Cards />
 			<FAQ classes="bg-slate-50 dark:bg-neutral-900/40" />
 		</div>
 	</section>
+	<div class="container mx-auto px-4" style="padding-top: 25px;">
+		<iframe src="https://api.leadconnectorhq.com/widget/booking/AIouF1lzcSiOat4vmZY3" style="width: 100%;border:none;overflow: hidden;" scrolling="no" id="AIouF1lzcSiOat4vmZY3_1769223298678"></iframe><br><script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>
+	</div>
 </Layout>
